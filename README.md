@@ -63,7 +63,3 @@ Command line to run your program
 python manage.py runserver
 ```
 
-Now open your browser and go to this address
-```
-http://127.0.0.1:8000
-```
