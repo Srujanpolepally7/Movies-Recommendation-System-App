@@ -10,7 +10,7 @@ from sklearn.metrics.pairwise import cosine_similarity
 # define a function that creates similarity matrix
 # if it doesn't exist
 def create_sim():
-    data = pd.read_csv(r'C:\Users\admin\Desktop\dw\Datasets\Movie_M_Data.csv')
+    data = pd.read_csv(r'C:\Users\polep\OneDrive - Högskolan Dalarna\Desktop\Interview\portfolio_projects\Movies-Recommendation-System-App-main\Movie_M_Data.csv')
     # creating a count matrix
     cv = CountVectorizer()
     count_matrix = cv.fit_transform(data['combine_data'])
@@ -53,7 +53,7 @@ def rcmd(m):
             l.append(data['movie_title'][a])
         return l
 
-app = Flask(__name__, template_folder = r'C:\Users\admin\Desktop\dw\Datasets\movie\template')
+app = Flask(__name__, template_folder = r'C:\Users\polep\OneDrive - Högskolan Dalarna\Desktop\Interview\portfolio_projects\Movies-Recommendation-System-App-main\Templates')
 
 @app.route("/")
 def home():
