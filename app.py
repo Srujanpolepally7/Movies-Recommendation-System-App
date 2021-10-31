@@ -53,11 +53,12 @@ def rcmd(m):
             l.append(data['movie_title'][a])
         return l
 
-app = Flask(__name__, template_folder = r'C:\Users\polep\OneDrive - Högskolan Dalarna\Desktop\Interview\portfolio_projects\Movies-Recommendation-System-App-main\Templates')
-
+app = Flask(__name__)
 @app.route("/")
+@app.route("/home")
 def home():
     return render_template('home.html')
+
 
 @app.route("/recommend")
 def recommend():
