@@ -10,7 +10,7 @@ from sklearn.metrics.pairwise import cosine_similarity
 # define a function that creates similarity matrix
 # if it doesn't exist
 def create_sim():
-    data = pd.read_csv(Movie_M_Data.csv')
+    data = pd.read_csv('Movie_M_Data.csv')
     # creating a count matrix
     cv = CountVectorizer()
     count_matrix = cv.fit_transform(data['combine_data'])
