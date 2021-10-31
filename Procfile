@@ -1,1 +1,1 @@
-web: python movie.py --port=$PORT
+web: gunicorn app:app
