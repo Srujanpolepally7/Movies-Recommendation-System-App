@@ -29,6 +29,9 @@ pip3
 
 5: Hurray! That's it.
 
+### Heroku web app: https://the-movie-recommendation.herokuapp.com/
+
+
 ## What is similirity score
 Sentiment similarity indicates the similarity between two words from their underlying sentiments. 
 Our approach is built on a model which maps from senses of words to vectors of twelve basic emotions. 
